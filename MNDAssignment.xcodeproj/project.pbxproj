@@ -14,6 +14,13 @@
 		A622AFD02CE6322A001B7B9A /* MNDAssignmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A622AFCF2CE6322A001B7B9A /* MNDAssignmentTests.swift */; };
 		A622AFDA2CE6322A001B7B9A /* MNDAssignmentUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A622AFD92CE6322A001B7B9A /* MNDAssignmentUITests.swift */; };
 		A622AFDC2CE6322A001B7B9A /* MNDAssignmentUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A622AFDB2CE6322A001B7B9A /* MNDAssignmentUITestsLaunchTests.swift */; };
+		A696F0662CE633EC007CEF16 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A696F0652CE633EC007CEF16 /* HomeView.swift */; };
+		A696F06C2CE63A45007CEF16 /* CommonConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A696F06B2CE63A45007CEF16 /* CommonConstants.swift */; };
+		A696F06E2CE63B50007CEF16 /* Color+AppPalatte.swift in Sources */ = {isa = PBXBuildFile; fileRef = A696F06D2CE63B50007CEF16 /* Color+AppPalatte.swift */; };
+		A696F0712CE63FA3007CEF16 /* CountdownDialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A696F0702CE63FA3007CEF16 /* CountdownDialView.swift */; };
+		A696F0732CE64380007CEF16 /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A696F0722CE64380007CEF16 /* TimerView.swift */; };
+		A696F0762CE645D9007CEF16 /* TimerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A696F0752CE645D9007CEF16 /* TimerViewModel.swift */; };
+		A696F0782CE647B8007CEF16 /* ControlPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A696F0772CE647B8007CEF16 /* ControlPanel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +51,13 @@
 		A622AFD52CE6322A001B7B9A /* MNDAssignmentUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MNDAssignmentUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A622AFD92CE6322A001B7B9A /* MNDAssignmentUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MNDAssignmentUITests.swift; sourceTree = "<group>"; };
 		A622AFDB2CE6322A001B7B9A /* MNDAssignmentUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MNDAssignmentUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A696F0652CE633EC007CEF16 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		A696F06B2CE63A45007CEF16 /* CommonConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonConstants.swift; sourceTree = "<group>"; };
+		A696F06D2CE63B50007CEF16 /* Color+AppPalatte.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+AppPalatte.swift"; sourceTree = "<group>"; };
+		A696F0702CE63FA3007CEF16 /* CountdownDialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountdownDialView.swift; sourceTree = "<group>"; };
+		A696F0722CE64380007CEF16 /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
+		A696F0752CE645D9007CEF16 /* TimerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewModel.swift; sourceTree = "<group>"; };
+		A696F0772CE647B8007CEF16 /* ControlPanel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlPanel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +108,8 @@
 		A622AFBD2CE63228001B7B9A /* MNDAssignment */ = {
 			isa = PBXGroup;
 			children = (
+				A696F0672CE636D6007CEF16 /* Utility */,
+				A696F0632CE63388007CEF16 /* Screens */,
 				A622AFBE2CE63228001B7B9A /* MNDAssignmentApp.swift */,
 				A622AFC02CE63228001B7B9A /* ContentView.swift */,
 				A622AFC22CE6322A001B7B9A /* Assets.xcassets */,
@@ -125,6 +141,51 @@
 				A622AFDB2CE6322A001B7B9A /* MNDAssignmentUITestsLaunchTests.swift */,
 			);
 			path = MNDAssignmentUITests;
+			sourceTree = "<group>";
+		};
+		A696F0632CE63388007CEF16 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				A696F0642CE63395007CEF16 /* HomeView */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		A696F0642CE63395007CEF16 /* HomeView */ = {
+			isa = PBXGroup;
+			children = (
+				A696F0742CE645BF007CEF16 /* TimerView */,
+				A696F0652CE633EC007CEF16 /* HomeView.swift */,
+				A696F0702CE63FA3007CEF16 /* CountdownDialView.swift */,
+				A696F0772CE647B8007CEF16 /* ControlPanel.swift */,
+			);
+			path = HomeView;
+			sourceTree = "<group>";
+		};
+		A696F0672CE636D6007CEF16 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				A696F0682CE636E3007CEF16 /* Extensions */,
+				A696F06B2CE63A45007CEF16 /* CommonConstants.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		A696F0682CE636E3007CEF16 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A696F06D2CE63B50007CEF16 /* Color+AppPalatte.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		A696F0742CE645BF007CEF16 /* TimerView */ = {
+			isa = PBXGroup;
+			children = (
+				A696F0722CE64380007CEF16 /* TimerView.swift */,
+				A696F0752CE645D9007CEF16 /* TimerViewModel.swift */,
+			);
+			path = TimerView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,7 +318,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A696F0732CE64380007CEF16 /* TimerView.swift in Sources */,
+				A696F0662CE633EC007CEF16 /* HomeView.swift in Sources */,
 				A622AFC12CE63228001B7B9A /* ContentView.swift in Sources */,
+				A696F0782CE647B8007CEF16 /* ControlPanel.swift in Sources */,
+				A696F06C2CE63A45007CEF16 /* CommonConstants.swift in Sources */,
+				A696F06E2CE63B50007CEF16 /* Color+AppPalatte.swift in Sources */,
+				A696F0762CE645D9007CEF16 /* TimerViewModel.swift in Sources */,
+				A696F0712CE63FA3007CEF16 /* CountdownDialView.swift in Sources */,
 				A622AFBF2CE63228001B7B9A /* MNDAssignmentApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
