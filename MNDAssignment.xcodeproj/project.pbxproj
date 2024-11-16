@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A61F7D9C2CE86B500096C8BF /* TimerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A61F7D9B2CE86B4F0096C8BF /* TimerService.swift */; };
 		A622AFBF2CE63228001B7B9A /* MNDAssignmentApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A622AFBE2CE63228001B7B9A /* MNDAssignmentApp.swift */; };
 		A622AFC12CE63228001B7B9A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A622AFC02CE63228001B7B9A /* ContentView.swift */; };
 		A622AFC32CE6322A001B7B9A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A622AFC22CE6322A001B7B9A /* Assets.xcassets */; };
@@ -41,6 +42,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A61F7D9B2CE86B4F0096C8BF /* TimerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerService.swift; sourceTree = "<group>"; };
 		A622AFBB2CE63228001B7B9A /* MNDAssignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MNDAssignment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A622AFBE2CE63228001B7B9A /* MNDAssignmentApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MNDAssignmentApp.swift; sourceTree = "<group>"; };
 		A622AFC02CE63228001B7B9A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -146,7 +148,7 @@
 		A696F0632CE63388007CEF16 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
-				A696F0642CE63395007CEF16 /* HomeView */,
+				A696F0792CE72FB1007CEF16 /* HomeScreen */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -154,10 +156,7 @@
 		A696F0642CE63395007CEF16 /* HomeView */ = {
 			isa = PBXGroup;
 			children = (
-				A696F0742CE645BF007CEF16 /* TimerView */,
 				A696F0652CE633EC007CEF16 /* HomeView.swift */,
-				A696F0702CE63FA3007CEF16 /* CountdownDialView.swift */,
-				A696F0772CE647B8007CEF16 /* ControlPanel.swift */,
 			);
 			path = HomeView;
 			sourceTree = "<group>";
@@ -184,8 +183,36 @@
 			children = (
 				A696F0722CE64380007CEF16 /* TimerView.swift */,
 				A696F0752CE645D9007CEF16 /* TimerViewModel.swift */,
+				A61F7D9B2CE86B4F0096C8BF /* TimerService.swift */,
 			);
 			path = TimerView;
+			sourceTree = "<group>";
+		};
+		A696F0792CE72FB1007CEF16 /* HomeScreen */ = {
+			isa = PBXGroup;
+			children = (
+				A696F07B2CE72FE3007CEF16 /* ControlPanel */,
+				A696F07A2CE72FCC007CEF16 /* CountdownDialView */,
+				A696F0742CE645BF007CEF16 /* TimerView */,
+				A696F0642CE63395007CEF16 /* HomeView */,
+			);
+			path = HomeScreen;
+			sourceTree = "<group>";
+		};
+		A696F07A2CE72FCC007CEF16 /* CountdownDialView */ = {
+			isa = PBXGroup;
+			children = (
+				A696F0702CE63FA3007CEF16 /* CountdownDialView.swift */,
+			);
+			path = CountdownDialView;
+			sourceTree = "<group>";
+		};
+		A696F07B2CE72FE3007CEF16 /* ControlPanel */ = {
+			isa = PBXGroup;
+			children = (
+				A696F0772CE647B8007CEF16 /* ControlPanel.swift */,
+			);
+			path = ControlPanel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -323,6 +350,7 @@
 				A622AFC12CE63228001B7B9A /* ContentView.swift in Sources */,
 				A696F0782CE647B8007CEF16 /* ControlPanel.swift in Sources */,
 				A696F06C2CE63A45007CEF16 /* CommonConstants.swift in Sources */,
+				A61F7D9C2CE86B500096C8BF /* TimerService.swift in Sources */,
 				A696F06E2CE63B50007CEF16 /* Color+AppPalatte.swift in Sources */,
 				A696F0762CE645D9007CEF16 /* TimerViewModel.swift in Sources */,
 				A696F0712CE63FA3007CEF16 /* CountdownDialView.swift in Sources */,

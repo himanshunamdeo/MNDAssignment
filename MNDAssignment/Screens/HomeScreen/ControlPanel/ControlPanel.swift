@@ -8,6 +8,10 @@
 import SwiftUI
 
 struct ControlPanel: View {
+    
+    @Binding var isStarted: Bool
+    @Binding var isStopped: Bool
+    
     var body: some View {
         ZStack {
             RoundedRectangle(cornerRadius: 50)
@@ -18,9 +22,10 @@ struct ControlPanel: View {
                 
                 Spacer()
                 Button (action: {
-                    // action
+                    isStarted.toggle()
                 }) {
-                    Image(systemName: "play.fill")
+                    
+                    Image(systemName: isStarted ? "pause.fill" : "play.fill")
                         .resizable()
                         .scaledToFit()
                         .foregroundColor(.white)
@@ -31,7 +36,7 @@ struct ControlPanel: View {
                 
 
                 Button (action: {
-                    // action
+                    isStopped.toggle()
                 }) {
                     Image(systemName: "stop.fill")
                         .resizable()
@@ -49,6 +54,6 @@ struct ControlPanel: View {
 
 struct ControlPanel_Previews: PreviewProvider {
     static var previews: some View {
-        ControlPanel()
+        ControlPanel(isStarted: .constant(true), isStopped: .constant(true))
     }
 }

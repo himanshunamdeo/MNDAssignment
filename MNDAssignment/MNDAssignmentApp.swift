@@ -11,7 +11,7 @@ import SwiftUI
 struct MNDAssignmentApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            HomeView()
         }
     }
 }

@@ -8,7 +8,11 @@
 import SwiftUI
 
 struct HomeView: View {
+    
     @State var progress: CGFloat = 0.5
+    @State var isStopped: Bool = false
+    @State var isStarted: Bool = false
+    
     var body: some View {
         ZStack {
             
@@ -28,25 +32,21 @@ struct HomeView: View {
                 
                 Spacer()
                 
+                // Timer UI with progress
                 ZStack {
                     CountdownDialView(progress: $progress)
                         .padding(30)
                     
-                    TimerView()
+                    TimerView(viewModel: TimerViewModel(timerService: ThrottledTimerService()), isStarted: $isStarted, isStopped: $isStopped, progressTracker: $progress)
                 }
                 
                 Spacer()
                 
-                ControlPanel()
+                // Start/Pause and Stop Button panel
+                ControlPanel(isStarted: $isStarted, isStopped: $isStopped)
                     .padding(.bottom)
-                
-                    
             }
-            
-            
-            
         }
-        
     }
 }
 
