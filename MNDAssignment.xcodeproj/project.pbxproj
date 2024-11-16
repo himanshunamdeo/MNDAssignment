@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		A61F7D9C2CE86B500096C8BF /* TimerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A61F7D9B2CE86B4F0096C8BF /* TimerService.swift */; };
+		A61F7D9E2CE8C2E50096C8BF /* LocalNotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A61F7D9D2CE8C2E50096C8BF /* LocalNotificationManager.swift */; };
 		A622AFBF2CE63228001B7B9A /* MNDAssignmentApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A622AFBE2CE63228001B7B9A /* MNDAssignmentApp.swift */; };
 		A622AFC12CE63228001B7B9A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A622AFC02CE63228001B7B9A /* ContentView.swift */; };
 		A622AFC32CE6322A001B7B9A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A622AFC22CE6322A001B7B9A /* Assets.xcassets */; };
@@ -43,6 +44,8 @@
 
 /* Begin PBXFileReference section */
 		A61F7D9B2CE86B4F0096C8BF /* TimerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerService.swift; sourceTree = "<group>"; };
+		A61F7D9D2CE8C2E50096C8BF /* LocalNotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalNotificationManager.swift; sourceTree = "<group>"; };
+		A61F7D9F2CE8C75B0096C8BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		A622AFBB2CE63228001B7B9A /* MNDAssignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MNDAssignment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A622AFBE2CE63228001B7B9A /* MNDAssignmentApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MNDAssignmentApp.swift; sourceTree = "<group>"; };
 		A622AFC02CE63228001B7B9A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -110,6 +113,7 @@
 		A622AFBD2CE63228001B7B9A /* MNDAssignment */ = {
 			isa = PBXGroup;
 			children = (
+				A61F7D9F2CE8C75B0096C8BF /* Info.plist */,
 				A696F0672CE636D6007CEF16 /* Utility */,
 				A696F0632CE63388007CEF16 /* Screens */,
 				A622AFBE2CE63228001B7B9A /* MNDAssignmentApp.swift */,
@@ -166,6 +170,7 @@
 			children = (
 				A696F0682CE636E3007CEF16 /* Extensions */,
 				A696F06B2CE63A45007CEF16 /* CommonConstants.swift */,
+				A61F7D9D2CE8C2E50096C8BF /* LocalNotificationManager.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -345,6 +350,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A61F7D9E2CE8C2E50096C8BF /* LocalNotificationManager.swift in Sources */,
 				A696F0732CE64380007CEF16 /* TimerView.swift in Sources */,
 				A696F0662CE633EC007CEF16 /* HomeView.swift in Sources */,
 				A622AFC12CE63228001B7B9A /* ContentView.swift in Sources */,
@@ -515,6 +521,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"MNDAssignment/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MNDAssignment/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -543,6 +550,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"MNDAssignment/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MNDAssignment/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

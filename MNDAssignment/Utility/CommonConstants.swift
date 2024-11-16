@@ -27,6 +27,13 @@ struct ScreenDimestion {
     static let height = UIScreen.main.bounds.height
 }
 
-let millisecondsInMinute = 60000
-let millisecondsInSecond = 1000
+struct TimerConstants {
+    static let millisecondsInMinute = 60000
+    static let millisecondsInSecond = 1000
+}
+
+struct BackgroundTaskName {
+    static let timerService = "CountdownTimer"
+}
+
 

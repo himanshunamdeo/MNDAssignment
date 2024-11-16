@@ -47,6 +47,9 @@ struct HomeView: View {
                     .padding(.bottom)
             }
         }
+        .onAppear {
+            LocalNotificationManager.shared.requestAuthorization()
+        }
     }
 }
 

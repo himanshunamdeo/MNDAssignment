@@ -32,11 +32,11 @@ class TimerViewModel: ObservableObject {
                 if !(self!.isStopped) {
                     
                     // Format text for display
-                    self?.minute = self?.formattedMinute(minInInt: timeRemaining - timeRemaining % millisecondsInMinute) ?? "00"
-                    self?.second = self?.formattedSecond(secondInInt: ((timeRemaining - timeRemaining % millisecondsInSecond)/millisecondsInSecond)) ?? "00"
-                    self?.milliSecond = self?.formattedMillisecond(milliInInt: timeRemaining % millisecondsInSecond) ?? "000"
+                    self?.minute = self?.formattedMinute(minInInt: timeRemaining - timeRemaining % TimerConstants.millisecondsInMinute) ?? "00"
+                    self?.second = self?.formattedSecond(secondInInt: ((timeRemaining - timeRemaining % TimerConstants.millisecondsInSecond)/TimerConstants.millisecondsInSecond)) ?? "00"
+                    self?.milliSecond = self?.formattedMillisecond(milliInInt: timeRemaining % TimerConstants.millisecondsInSecond) ?? "000"
                     // Update progress tracker
-                    self?.progressTracker = CGFloat(timeRemaining) / CGFloat(millisecondsInMinute)
+                    self?.progressTracker = CGFloat(timeRemaining) / CGFloat(TimerConstants.millisecondsInMinute)
                 }
             }
             .store(in: &cancellables)
